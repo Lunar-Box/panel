@@ -106,7 +106,7 @@
             <li><a href="/servers">Servers</a></li>
             <li><a href="/support">Support</a></li>
             @auth
-                <li class="user"><a href="/home"><i class="fas fa-user"></i>&nbsp;INfoUpgraders</a></li>
+                <li class="user"><a href="/home"><i class="fas fa-user"></i>&nbsp;{{ Auth::user()->name }}</a></li>
             @else
                 <li class="user"><a href="/login"><i class="fas fa-sign-in-alt"></i>&nbsp;Login</a></li>
             @endauth
