@@ -62,7 +62,7 @@
                         {{-- @endif --}}
                         <i class="far fa-circle text-success"></i>&nbsp;Online<br>
                         </p>
-                        <a href="#" class="btn bg-dark btn-secondary">View Server</a>
+                        <a href="/console" class="btn bg-dark btn-secondary">View Server</a>
                     </div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                         {{-- @endif --}}
                         <i class="far fa-circle text-danger"></i>&nbsp;Offline<br>
                         </p>
-                        <a href="#" class="btn bg-dark btn-secondary">View Server</a>
+                        <a href="/console" class="btn bg-dark btn-secondary">View Server</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                         {{-- @endif --}}
                         <i class="text-warning far fa-circle"></i>&nbsp;Starting<br>
                         </p>
-                        <a href="#" class="btn bg-dark btn-secondary">View Server</a>
+                        <a href="/console" class="btn bg-dark btn-secondary">View Server</a>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@
                         {{-- @endif --}}
                         <i class="text-success far fa-circle"></i>&nbsp;Online<br>
                         </p>
-                        <a href="/server/" class="btn bg-dark btn-secondary">View Server</a>
+                        <a href="/console" class="btn bg-dark btn-secondary">View Server</a>
                     </div>
                 </div>
             </div>
