@@ -82,10 +82,10 @@
         <p class="console-text">{{ $log ?? 'EXITED (0)' }}</p>
     </div>
     <div class="border-rad-btm server-console-control">
-        <p class="console-btn"><a href="#">Start</a></p>
-        <p class="console-btn"><a href="#">Restart</a></p>
-        <p class="console-btn"><a href="#">Stop</a></p>
-        <p class="console-btn"><a href="#">Kill</a></p>
+        <p class="console-btn"><a >Start</a></p>
+        <p class="console-btn"><a >Restart</a></p>
+        <p class="console-btn"><a >Stop</a></p>
+        <p class="console-btn"><a >Kill</a></p>
     </div>
 </div>
 
