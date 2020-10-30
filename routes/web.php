@@ -20,7 +20,9 @@ Route::get('/welcome', function () {
 
 Route::get('/', 'IndexController@index');
 
-Route::get('/servers', 'ViewController@index');
+Route::get('/servers', 'ConsoleController@index');
+
+Route::get('/console', 'ViewController@index');
 
 Auth::routes();
 
