@@ -8,14 +8,15 @@ use App\Servers;
 class IndexController extends Controller
 {
     public function index() {
-        $servers = Servers::latest('created_at')->get();
-        return view('index')->with([
-            'servers' => $servers,
-        ]);
+        return view('index');
     }
 
     public function startup() {
         return view('startup');
+    }
+
+    public function deploy() {
+        return view('index');
     }
 
     public function create(Request $request) {
