@@ -18,9 +18,9 @@ class CreateServersTable extends Migration
             $table->string('owner_id');
             $table->string('uuid');
             $table->string('uuid_short');
-            $table->string('cpu');
-            $table->string('memory');
-            $table->string('disk');
+            $table->string('cpu')->default('100');
+            $table->string('memory')->default('256');
+            $table->string('disk')->default('1024');
             $table->string('startup');
             $table->timestamps();
         });
