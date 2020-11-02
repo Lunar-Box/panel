@@ -2,7 +2,6 @@
 @section('head')
 <style>
     .contain {
-            display: flex;
             margin-top: 100px !important;
             background-color: rgba(0, 0, 0, 0.3);
             padding: 15px;
@@ -54,7 +53,12 @@
             color: white;
         }
         .form {
-            margin: 65px;
+            margin: 90px;
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 </style>
 @endsection
@@ -62,8 +66,8 @@
 @section('body')
 <div>
     <div style="display: show;" id="main" class="border-rad contain">
-    <h1>Startup</h1>
-    <div class="form">
+    <h1 class="center">Startup</h1>
+    <div class="form center">
         <form method="POST" action="/server/startup">
             <label for="startup_cmd">Startup:&nbsp;</label>
             <input class="startup_cmd" type="text" id="startup_cmd" name="startup_cmd" value="{{ $server->startup ?? '' }}" placeholder="python3 --version"><br>
