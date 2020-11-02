@@ -17,28 +17,6 @@
     <title>@yield('title')</title>
     @yield('style')
     <style>
-                ::-webkit-scrollbar {
-            width: 16px;
-            background: none;
-            height: 16px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            border-width: 0px 4px;
-            border-style: solid;
-            border-color: rgba(0, 0, 0, 0);
-            border-image: initial;
-            border-radius: 9px / 4px;
-            box-shadow: rgb(123, 135, 147) 0px 0px 0px 1px inset, rgb(63, 77, 90) 0px 0px 0px 4px inset;
-        }
-
-        ::-webkit-scrollbar-corner {
-            background: transparent;
-        }
 
         html, body {
             min-height: 100% !important;
