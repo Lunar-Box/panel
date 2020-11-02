@@ -13,6 +13,11 @@ class IndexController extends Controller
             'servers' => $servers,
         ]);
     }
+
+    public function startup() {
+        return view('startup');
+    }
+
     public function create(Request $request) {
         $server = new Servers();
         $server->owner = $request->owner;

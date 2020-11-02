@@ -15,18 +15,12 @@ class CreateServersTable extends Migration
     {
         Schema::create('servers', function (Blueprint $table) {
             $table->id();
-            $table->string('owner');
+            $table->string('owner_id');
             $table->string('uuid');
-            $table->string('uuidshort');
-            $table->string('name');
-            $table->string('description');
+            $table->string('uuid_short');
             $table->string('cpu');
             $table->string('memory');
             $table->string('disk');
-            $table->string('node');
-            $table->string('ports');
-            $table->string('suspended');
-            $table->string('image');
             $table->string('startup');
             $table->timestamps();
         });

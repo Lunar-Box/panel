@@ -20,9 +20,16 @@ Route::get('/welcome', function () {
 
 Route::get('/', 'IndexController@index');
 
+Route::get('/server/startup', 'IndexController@startup');
+
 Route::get('/servers', 'ConsoleController@index');
 
-Route::get('/console', 'ViewController@index');
+Route::get('/console', 'ViewController@index')->name('console');
+
+Route::get('/server/start', 'ApplicationController@start');
+Route::get('/server/restart', 'ApplicationController@restart');
+Route::get('/server/stop', 'ApplicationController@stop');
+Route::get('/server/kill', 'ApplicationController@kill');
 
 Auth::routes();
 

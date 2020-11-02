@@ -1,12 +1,16 @@
 @extends('layouts.base')
 @section('head')
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 <style>
     .center-console {
         background-color: rgba(0, 0, 0, 0.3);
         margin: 0 auto;
         width: 55%;
         margin-top: 25px;
-        height: 665px;
+        height: 550px;
+        overflow-y: scroll;
+        margin-bottom: 100px;
     }
     p {
         color: white;
@@ -30,7 +34,7 @@
         margin: 0 auto;
         background-color: rgba(0, 0, 0, 0.5);
         text-align: center;
-        margin-top: -65px;
+        margin-top: -100px;
         height: 65px;
     }
     .console-btn {
@@ -55,7 +59,7 @@
         color: white;
     }
     .console-text {
-        font-family: 'Lucida Console';
+        font-family: 'Space Mono', monospace;
         font-size: 16;
         padding: 15px !important;
         margin: 0 !important;
@@ -66,26 +70,25 @@
 @section('body')
 <div style="background-color: rgba(0, 0, 0, 0.3);" class="navbar">
     <ul>
-
         <li><a href="/server/id/console"><i class="fas fa-terminal"></i>&nbsp;Console</a></li>
         <li><a href="/server/id/file-manager"><i class="fas fa-folder"></i>&nbsp;File Manager</a></li>
-        <li><a href="/server/id/startup"><i class="fas fa-play"></i>&nbsp;Startup</a></li>
+        <li><a href="/server/startup"><i class="fas fa-play"></i>&nbsp;Startup</a></li>
         <li><a href="/server/id/network"><i class="fas fa-network-wired"></i>&nbsp;Network</a></li>
     </ul>
 </div>
 
 <div>
-    <div class="border-rad center-console">
+    <div class="border-rad-top center-console">
         <div class="border-rad-top server-name">
             <p class="server-name-text">{{ $name ?? 'CONTAINER' }}</p>
         </div>
-        <p class="console-text">{{ $log ?? 'EXITED (0)' }}</p>
+        <p class="console-text">{!! $log ?? 'EXITED (0)' !!}</p>
     </div>
     <div class="border-rad-btm server-console-control">
-        <p class="console-btn"><a >Start</a></p>
-        <p class="console-btn"><a >Restart</a></p>
-        <p class="console-btn"><a >Stop</a></p>
-        <p class="console-btn"><a >Kill</a></p>
+        <p class="console-btn"><a href="/server/start">Start</a></p>
+        <p class="console-btn"><a href="/server/restart">Restart</a></p>
+        <p class="console-btn"><a href="/server/stop">Stop</a></p>
+        <p class="console-btn"><a href="/server/kill">Kill</a></p>
     </div>
 </div>
 
