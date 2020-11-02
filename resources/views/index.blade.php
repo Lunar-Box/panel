@@ -162,10 +162,10 @@
         <div class="item3">
             <a class="a" href="/register">Register!</a>
             <br>
-            <a id="toggle" class="a">Deploy a box!</a>
+            <a id="toggle-reverse" href="/deploy" class="a">Deploy a box!</a>
         </div>
     </div>
-    <div style="display: none;" id="deploy" class="border-rad grid-container container2">
+    {{-- <div style="display: none;" id="deploy" class="border-rad grid-container container2">
         <div class="item1">Deploy a new box!</div>
         <div class="item5">
             <div class='langs'>
@@ -174,14 +174,14 @@
                 </div>
                 <div style="margin-right: 35px;" class="lang nodejs"><i id="nodejs" class="fab fa-node-js"></i><br><p id="nodejst">Node.js</p></div>
                 <div class="lang python"><i id="python" class="fab fa-python"></i><br><p id="pythont">Python</p></div>
-                {{-- <i class="fab fa-java"></i>
+                {<i class="fab fa-java"></i>
                 <i class="fab fa-php"></i>
                 <i class="fab fa-html5"></i>
-                <i class="fab fa-ubuntu"></i> --}}
+                <i class="fab fa-ubuntu"></i>
             <div style="display: none;" id="nodejsv">
                 <h1>v10</h1><h1>v12</h1><h1>v14</h1>
             </div>
-        </div>
+        </div> --}}
 
     <script>
         $( "#toggle" ).click(function () {
